@@ -1,0 +1,220 @@
+/*Estilos Páginas das Formas*/
+
+.mainFormasConteudo{
+    margin: 0 auto;
+    width: 900px;
+    padding: 30px; 
+}
+
+.mainFormasConteudo h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.sectionConteudo{
+    display: flex;
+    padding: 15px;
+    background: var(--destaque);
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.sectionConteudo h2{
+    text-align: justify;
+    color: var(--destaque);
+    padding-left: 30px;  
+}
+
+.sectionConteudo article:nth-child(1){
+    background: var(--white) ;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.sectionConteudo article:nth-child(2){
+    background: var(--white) ;
+}
+
+.conteinerConteudoForma{
+    display: flex;
+    align-items: center;
+}
+
+.conteinerConteudoForma img{
+    width: 200px;
+}
+
+.conteinerConteudoForma p{
+    width: 350px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.conteinerConteudoForma p span{
+    font-size: 17px;
+}
+
+/*Botões Página do Formulário*/
+
+.area-calculadoras{
+    margin-top: 30px;
+    padding: 50px;
+    background: var(--azulClaro);
+}
+
+.area-calculadoras h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.conteiner-calculadoras-botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.conteinerBotoes{
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 900px;
+    gap: 30px;
+}
+
+.conteinerBotoes article{
+    width: 200px;
+    height: 100px;
+    background: var(--rose);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteinerBotoes article h3{
+    font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    color: var(--white);
+}
+
+/*Estilos para o Formulário*/
+
+.formulario {
+    background: var(--white);
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--secundaria);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--roxo);
+}
+
+.labelFlex{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+select{
+    font-size: 15px;
+}
+
+#numeroLados{
+    width: 86px;
+}
+
+input[type="number"]{
+    width: 100%;
+    font-size: 16px;
+}
+
+select, input[type="number"]{
+    height: 35px;
+    color: var(--roxo);
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    outline: 2px solid var(--rose);
+}
+
+input:focus{
+    box-shadow: 2px 2px 8px var(--destaque);
+}
+
+select:focus{
+    box-shadow: 2px 2px 8px var(--destaque);
+}
+
+/*Span Resultado*/
+
+#resultado{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/*Estilo botão*/
+.action-control{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-control button{
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 18px;
+    background: var(--rose);
+    border: none;
+    width: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-control button:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.action-control button:nth-child(1){
+    background: var(--roxo);
+}
+
+.action-control button:nth-child(1):active{
+    background: var(--rose);
+    box-shadow: 2px 2px 6px var(--roxo);
+}
+
+.action-control button:nth-child(2):active{
+    background: var(--roxo);
+    box-shadow: 2px 2px 6px var(--rose);
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/calculadora.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/reponsividade.css">
+    <script src="assets/js/script.js"></script>
+    <title>Calcular Área do Tronco de Pirâmide | Calculadora</title>
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="navBar">
+            <div class="nav-list"> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#curiosidade">Curiosidades</a></li>
+                    <li><a href="#calculadoras02">Calculadoras</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="logo-mobile">
+                <h3>Math <span class="colorLogo">Univ</span>erse</h3>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="assets/img/open_menu02.svg" alt="Menu de navegação" class="icon"></button>
+            </div>
+          
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#curiosidade" class="nav-link">Curiosidades</a></li> 
+                <li class="nav-item"><a href="#calculadoras02" class="nav-link">Calculadoras</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+        </div>
+      </header>
+
+    <main>
+        <section class="mainFormasConteudo">
+            <div class="titleMain">
+                <h1>Cálculo da Área do Tronco de Pirâmide</h1>
+            </div>
+
+            <section class="sectionConteudo">
+                <article>
+                    <div class="titleConteudo">
+                        <h2>Tronco de Pirâmide</h2>
+                    </div>
+                    <div class="conteinerConteudoForma conteinerConteudoForma2">
+                        <div>
+                            <img src="assets/img/Tronco-piramide02.png" alt="Imagem de um tronco de pirâmide geométrica">
+                        </div>
+                        <div>
+                            <p>
+                                O tronco de pirâmide é uma figura tridimensional que se assemelha a uma pirâmide com a parte superior "cortada", criando uma superfície superior menor do que a inferior. 
+                            </p>
+                            <p>
+                                Para calcular a sua área total, que é medida em unidades quadradas, somamos as suas áreas laterais e as áreas das bases maior e menor.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="conteinerConteudoForma formulaImagem">
+                        <div>
+                            <img src="assets/img/Tronco-piramide03.png" alt="Imagem de um tronco de pirâmide geométrica">
+                        </div>
+                        <div>
+                            <p>
+                               <span class="formula">Fórmula: A = A1 + A2 + Al</span>
+                                <ul>
+                                    <li>A - área total do tronco</li>
+                                    <li>A1 - área da base maior</li>
+                                    <li>A2 - área da base menor</li>
+                                    <li>Al - área lateral</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="formulario">
+                    <form action="#" method="post">
+                        <div class="titleForm">
+                            <h3>Calculadora</h3>
+                        </div>
+                        <div>
+                            <label for="unidadeMedida">Unidade de medida</label>
+                            <select name="unidadeMedida" id="unidadeMedida">
+                                <option value="inicio" selected>--</option>
+                                <option value="m²">m²</option>
+                                <option value="cm²">cm²</option>
+                            </select>
+                        </div>
+
+                        <div class="elementoForm">
+                            <label for="baseMaiorTronco" class="labelFlex">Base Maior</label>
+                            <input type="number" id="baseMaiorTronco" name="baseMaiorTronco" required>
+                        </div>
+                        <div class="elementoForm">
+                            <label for="baseMenorTronco" class="labelFlex">Base Menor</label>
+                            <input type="number" id="baseMenorTronco" name="baseMenorTronco" required>
+                        </div>
+                        <div class="elementoForm">
+                            <label for="alturaTronco" class="labelFlex">Altura</label>
+                            <input type="number" id="alturaTronco" name="alturaTronco" required>
+                        </div>
+
+                        <div class="result">
+                            <label for="resultado">Área: </label>
+                            <span id="resultado"></span>
+                        </div>
+
+                        <div class="action-control">
+                            <button type="button" id="calc-btn" onclick="areaTroncoPiramide()">Calcular</button>
+                            <button type="reset" id="reset-btn" onclick="clean()">Limpar</button>
+                        </div>
+
+                    </form>
+                </article>
+            </section>
+        </section>
+
+        <section class="area-calculadoras">
+            <div> 
+                <h2 id="calculadoras02">Calculadoras</h2>
+            </div>
+
+            <section class="conteiner-calculadoras-botoes">
+                <div class="conteinerBotoes">
+                    <a href="circulo.html">
+                        <article>
+                            <h3>Círculo</h3>
+                        </article>
+                    </a>
+
+                    <a href="coroaCircular.html">
+                        <article>
+                            <h3>Coroa do Círculo</h3>
+                        </article>
+                    </a>
+
+                    <a href="setorCircular.html">
+                        <article>
+                            <h3>Setor Circular</h3>
+                        </article>
+                    </a>
+
+                    <a href="poligonoRegular.html">
+                        <article>
+                            <h3>Polígonos Regulares</h3>
+                        </article>
+                    </a>
+                        
+                    <a href="quadrado.html">
+                        <article>
+                            <h3>Quadrado</h3>
+                        </article>
+                    </a>
+
+                    <a href="retangulo.html">
+                        <article>
+                            <h3>Retângulo</h3>
+                        </article>
+                    </a>
+
+                    <a href="trapezoide.html">
+                        <article>
+                            <h3>Trapézio Irregular</h3>
+                        </article>
+                    </a>
+
+                    <a href="troncoPiramide.html">
+                        <article>
+                            <h3>Tronco de Pirâmide</h3>
+                        </article>
+                    </a>
+                </div>
+            </section>
+        </section>    
+
+        <section class="area-footer01 area-footer02">
+            <div class="logo-footer">
+                <h2>Math <span class="colorLogo">Univ</span>erse</h2>
+                <p>Site focado em descomplicar a Matemática, porque o seu aprendizado vale ouro!</p>
+            </div>
+
+            <div class="nav-footer">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Curiosidades</a></li>
+                    <li><a href="calculadoras02">Calculadoras</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-footer">
+                <h3>Contato</h3>
+                <ul>
+                    <li><a href="">Contato@mathverse.com</a></li>
+                    <li><a href="">Celular: (11) 91234 - 5678</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-footer">
+                <h3>Redes Sociais</h3>
+                <ul class="social-midia">
+                    <li><a href="https://github.com/LarissaCarvalho1" target="_blank" rel="External"><img src="assets/img/github.svg" alt="Logo Github" class="icon-midia"></a></li>
+                    <li><a href="https://www.linkedin.com/in/larissa-carvalho-78437a229/" target="_blank" rel="External"><img src="assets/img/linkedin.svg" alt="Logo Linkedin"  class="icon-midia"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div>
+                <p> &copy; Copyright 2023 - Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <p>Criado por Larissa Carvalho 💙</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/scroll.js"></script>
+</body>
+</html>

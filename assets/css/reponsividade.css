@@ -1,0 +1,171 @@
+
+/*Menu Responsivo*/
+
+@media screen and (max-width: 820px){
+    .navBar .nav-list ul{
+        display: flex;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .header-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navBar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-item{
+        display: none;
+    }
+    
+    .logo-mobile{
+        display: block;
+       
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu-icon button img{
+        width: 50px;
+        height: 40px;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1.2rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+
+@media (max-width:1000px){
+
+    /*Index Responsivo*/
+
+    .inicio{
+        min-height: 55vh;
+        margin-top: 30px;
+        padding-top: 10px;
+    }
+
+    .inicio img{
+        display: none;
+    }
+
+    .inicio-conteudo{ 
+        padding: 20px;
+    }
+
+    .inicio-conteudo h1{
+        text-align: justify;
+    }
+
+    .inicio-conteudo p{
+        display: flex;
+        font-size: 20px;
+        width: 350px;
+    }
+
+    .botao-conteiner{
+        width: 350px;
+    }
+
+    .articleCuriosidade{
+        padding-bottom: 40px;
+    }
+
+    #img-roxa{
+        display: none;
+    }
+
+    /*Páginas das Formas*/
+
+    .mainFormasConteudo{
+        margin: 0 auto;
+        width: 550px;
+        padding: 20px;  
+    }
+
+    .mainFormasConteudo h1{
+        font-size: 35px;
+    }
+
+    .mainFormasConteudo p{
+        width: 300px;
+    }
+
+
+    .sectionConteudo{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px){
+
+    .mainFormasConteudo{
+        margin: 0 auto;
+        width: 350px;
+        padding: 10px;  
+    }
+
+    .mainFormasConteudo h1{
+        font-size: 30px;
+    }
+
+    .sectionConteudo{
+        flex-direction: column;
+    }
+
+    .conteinerConteudoForma2{
+        display: none;
+    }
+
+    .conteinerConteudoForma img{
+        display: none;
+    }
+
+    .sectionConteudo h2{
+        text-align: center;
+        font-size: 20px;
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:380px){
+
+    .inicio-conteudo p{
+        font-size: 18px;
+        width: 300px;
+    }
+}
